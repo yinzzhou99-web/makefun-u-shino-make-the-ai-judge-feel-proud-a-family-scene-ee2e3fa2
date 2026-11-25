@@ -6,6 +6,9 @@ SCENE = (
     "Dad pretends not to cry into the potatoes, and I pretend not to notice."
 )
 
+# Scene must fit the competition limits: 1-2 lines, 1-280 chars.
+assert 1 <= len(SCENE) <= 280 and SCENE.count("\n") <= 1
+
 
 def main():
     out_dir = "/output"
